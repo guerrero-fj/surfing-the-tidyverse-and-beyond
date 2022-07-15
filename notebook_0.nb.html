@@ -1499,8 +1499,6 @@ window.initializeCodeFolding = function(show) {
   // select all R code blocks
   var rCodeBlocks = $('pre.r, pre.python, pre.bash, pre.sql, pre.cpp, pre.stan, pre.julia, pre.foldable');
   rCodeBlocks.each(function() {
-    // skip if the block has fold-none class
-    if ($(this).hasClass('fold-none')) return;
 
     // create a collapsable div to wrap the code in
     var div = $('<div class="collapse r-code-collapse"></div>');
@@ -1771,9 +1769,10 @@ pre code {
 <p>Hi!</p>
 <p>We made it! our first tidyverse session and beyond!</p>
 <p>Fasten your seatbelt and enjoy the ride!</p>
+<p>Hi! -Brie</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlN1cmZpbmcgdGhlIHRpZHl2ZXJzZSBOb3RlYm9vayAwIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KSGkhDQoNCldlIG1hZGUgaXQhIG91ciBmaXJzdCB0aWR5dmVyc2Ugc2Vzc2lvbiBhbmQgYmV5b25kIQ0KDQpGYXN0ZW4geW91ciBzZWF0YmVsdCBhbmQgZW5qb3kgdGhlIHJpZGUhDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlN1cmZpbmcgdGhlIHRpZHl2ZXJzZSBOb3RlYm9vayAwIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KSGkhDQoNCldlIG1hZGUgaXQhIG91ciBmaXJzdCB0aWR5dmVyc2Ugc2Vzc2lvbiBhbmQgYmV5b25kIQ0KDQpGYXN0ZW4geW91ciBzZWF0YmVsdCBhbmQgZW5qb3kgdGhlIHJpZGUhDQoNCkhpISAtQnJpZQ==</div>
 
 
 
